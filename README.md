@@ -1,3 +1,12 @@
+# Update: 3/22/2020
+
+I recently found the original repo while looking to customize cmder on my personal machine. Everything seemed to be fine, but I realized that if you are using a Python venv, the repo that I found didn't list the active venv (something that vanilla cmder does). In the Status and Contributions section of this README, the link for [Show active Python Virtual Environment](#-Status-&-Contributions) appears that it would work with the Python module [virtualenv](https://pypi.org/project/virtualenv/). However, I wanted something that would work with the standard library module [venv](https://docs.python.org/3/library/venv.html#module-venv). Additionally, the link for [Add Python's VENV support](#-Status-&-Contributions) goes to an outdated and non-merged PR on the original repo.
+
+The original repo also looks like it has not been maintained in multiple years. I forked from [Thomas Norris's](https://github.com/thomasnorris) repo as it looks like he made a great edit regarding the git folder name and fixed some other issues from the original repo that were sitting in PR's.
+
+My main goal is to create an add-on so that the Python venv is listed when one is activated.
+Below, you will find the original README file.
+
 # Cmder-powerline-prompt
 
 This is a custom prompt for [Cmder](http://cmder.net/) (the alternative console emulator for Windows). There's also a [PowerShell version](https://github.com/AmrEldib/cmder-powershell-powerline-prompt) of this prompt.  
