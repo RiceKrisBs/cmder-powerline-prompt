@@ -112,13 +112,21 @@ end
 if not plc_prompt_lambSymbol then
 	plc_prompt_lambSymbol = "λ"
 end
--- Version control (e.g. Git) branch symbol. Used to indicate the name of a branch.
+-- Version control (Git) branch symbol. Used to indicate the name of a branch.
 if not plc_git_branchSymbol then
 	plc_git_branchSymbol = ""
 end
--- Version control (e.g. Git) conflict symbol. Used to indicate there's a conflict.
+-- Version control (Git) conflict symbol. Used to indicate there's a conflict.
 if not plc_git_conflictSymbol then
 	plc_git_conflictSymbol = "!"
+end
+-- Version control (hg) branch symbol. Used to indicate the name of a branch.
+if not plc_hg_branchSymbol then
+	plc_hg_branchSymbol = ""
+end
+-- Version control (hg) conflict symbol. Used to indicate there's a conflict.
+if not plc_hg_conflictSymbol then
+	plc_hg_conflictSymbol = "!"
 end
 
 ---
