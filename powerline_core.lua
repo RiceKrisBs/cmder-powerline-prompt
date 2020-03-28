@@ -128,6 +128,7 @@ end
 if not plc_hg_conflictSymbol then
 	plc_hg_conflictSymbol = "!"
 end
+
 ---
 -- Adds an arrow symbol to the input text with the correct colors
 -- text {string} input text to which an arrow symbol will be added
