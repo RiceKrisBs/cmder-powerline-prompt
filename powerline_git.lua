@@ -1,7 +1,7 @@
 -- Constants
 local segmentColors = {
     clean = {
-        fill = colorGreen,
+        fill = colorMagenta,
         text = colorWhite
     },
     dirty = {

@@ -210,8 +210,12 @@ end
 ---
 -- Closes the prompts with a new line and the lamb symbol
 ---
+function newLinePrompt()
+	clink.prompt.value = clink.prompt.value..newLineSymbol
+end
+
 function closePrompt()
-	clink.prompt.value = clink.prompt.value..newLineSymbol..plc_prompt_lambSymbol.." "
+	clink.prompt.value = clink.prompt.value..plc_prompt_lambSymbol.." "
 end
 
 ---
@@ -262,4 +266,5 @@ end
 
 -- Register filters for resetting the prompt and closing it before and after all addons
 clink.prompt.register_filter(resetPrompt, 51)
+clink.prompt.register_filter(newLinePrompt, 90)
 clink.prompt.register_filter(closePrompt, 99)

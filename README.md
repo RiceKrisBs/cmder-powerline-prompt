@@ -1,3 +1,6 @@
+# Update: 3/28/2020
+While reading more to understand how the .lua files work, I found an old, unmerged PR from [David Smith](https://github.com/davepwsmith) which is exactly what I've been looking for. This essentially adds back the functionality of listing the python venv before the lambda prompt, which is present in cmder by default, but these custom .lua files removed. I've also updated some of the settings to display my preference by default.
+
 # Update: 3/22/2020
 
 I recently found the original repo while looking to customize cmder on my personal machine. Everything seemed to be fine, but I realized that if you are using a Python venv, the repo that I found didn't list the active venv (something that vanilla cmder does). In the Status and Contributions section of this README, the link for [Show active Python Virtual Environment](#-Status-&-Contributions) appears that it would work with the Python module [virtualenv](https://pypi.org/project/virtualenv/). However, I wanted something that would work with the standard library module [venv](https://docs.python.org/3/library/venv.html#module-venv). Additionally, the link for [Add Python's VENV support](#-Status-&-Contributions) goes to an outdated and non-merged PR on the original repo.
