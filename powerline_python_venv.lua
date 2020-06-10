@@ -12,8 +12,8 @@ end
 local   function conda_prompt_filter()
     -- add in python virtual env name
     local python_env = get_virtual_env('CONDA_DEFAULT_ENV')
-    if venv then
-        local venv_short = string.match(venv, "[^\\/:]+$")
+    if python_env then
+        local venv_short = string.match(python_env, "[^\\/:]+$")
         clink.prompt.value = clink.prompt.value.."["..venv_short.."] "
     end
 end
